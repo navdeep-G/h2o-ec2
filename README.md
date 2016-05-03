@@ -13,10 +13,9 @@ Note:  Run this from a host that can access the nodes via public DNS name.
 
 Edit h2o-cluster-launch-instances.py to suit your specific environment.
 At a minimum, you need to specify an ssh key name and a security group name.
+Run the following:
 
   - ./h2o-cluster-launch-instances.py
-  - ./h2o-cluster-distribute-h2o.sh  --OR--  ./h2o-cluster-download-h2o.sh
-  - [optional] ./h2o-cluster-distribute-aws-credentials.sh
 
 Note:  If you run h2o with an IAM role, it is not necessary to distribute
        the aws-credentials to all the nodes in the cluster. The temporary
@@ -34,7 +33,7 @@ STEP 2:  Start H2O, one H2O node per EC2 instance
 -------------------------------------------------
 
 - ./h2o-cluster-start-h2o.sh
-(wait 60 seconds)
+  (wait 60 seconds)
 
 
 STEP 3:  Point your browser to H2O

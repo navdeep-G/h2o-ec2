@@ -10,9 +10,9 @@ import boto.ec2
 # Environment variables you MUST set (either here or by passing them in).
 # -----------------------------------------------------------------------
 #
-# os.environ['AWS_ACCESS_KEY_ID'] = '...'
-# os.environ['AWS_SECRET_ACCESS_KEY'] = '...'
-# os.environ['AWS_SSH_PRIVATE_KEY_FILE'] = '/path/to/private_key.pem'
+#os.environ['AWS_ACCESS_KEY_ID'] = '...'
+#os.environ['AWS_SECRET_ACCESS_KEY'] = '...'
+#os.environ['AWS_SSH_PRIVATE_KEY_FILE'] = '/path/to/private_key.pem'
 
 # Launch EC2 instances with an IAM role
 # --------------------------------------

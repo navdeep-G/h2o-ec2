@@ -40,7 +40,7 @@ STEP 3:  Point your browser to H2O
 ----------------------------------
 
 Point your web browser to 
-    http://<any one of the public DNS node addresses>:54321
+    http://any one of the public DNS node addresses:54321
 
 
 Stopping and restarting H2O

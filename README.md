@@ -1,5 +1,4 @@
 # h2o-ec2
-Run H2O on top of AWS EC2 
 
 This directory contains scripts to launch an H2O cluster in EC2.
 

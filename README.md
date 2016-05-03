@@ -3,14 +3,9 @@ Run H2O on top of AWS EC2
 
 This directory contains scripts to launch an H2O cluster in EC2.
 
-Note: Install the boto library for Python if you have not done so already.
-
-http://boto.readthedocs.org/en/latest/
-http://www.amazon.com/Python-and-AWS-Cookbook-ebook/dp/B005ZTO0UW/ref=sr_1_1?ie=UTF8&qid=1379879111&sr=8-1&keywords=python+aws
-
-
 [ STEP 0:  Install python and boto, if necessary. ]
 
+http://boto.readthedocs.org/en/latest/
 
 STEP 1:  Build a cluster of EC2 instances
 -----------------------------------------

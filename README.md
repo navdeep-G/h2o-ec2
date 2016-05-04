@@ -4,17 +4,19 @@ This directory contains scripts to launch an H2O cluster in EC2.
 
 STEP 1:  Set up Amazon Credentials
 -----------------------------------------
+
 - Add key info to `~/.bash_profile`:
 ```
 # EC2 keys
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
-export AWS_SSH_PRIVATE_KEY_FILE="/home/ubuntu/.ssh/aws_key.pem"
+export AWS_SSH_PRIVATE_KEY_FILE="/path/to/private_key.pem"
 ```
 - Source the file:
 ```
 source ~/.bash_profile
 ```
+
 STEP 2:  Install python and boto, if necessary
 -----------------------------------------
 
@@ -47,8 +49,10 @@ STEP 4:  Start H2O Cluster
 STEP 5:  Point your browser to H2O
 ----------------------------------
 
-Point your web browser to 
-    http://any one of the public DNS node addresses:54321
+Point your web browser to the following: 
+    - http://any one of the public DNS node addresses:54321
+    
+This will open up the H2O Flow GUI
 
 Stopping and restarting H2O
 ---------------------------

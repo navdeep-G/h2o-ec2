@@ -30,6 +30,7 @@ STEP 3:  Build a cluster of EC2 instances
 ```
 numInstancesToLaunch = 6
 instanceType = 'm3.large'
+instanceNameRoot = 'navdeep-instance'
 ```
 - After changing the previous run the following:
 ```

@@ -20,7 +20,8 @@ source ~/.bash_profile
 STEP 2:  Install python and boto, if necessary
 -----------------------------------------
 
-http://boto.readthedocs.org/en/latest/
+- Boto: http://boto.readthedocs.org/en/latest/
+- Python: https://www.python.org/
 
 STEP 3:  Build a cluster of EC2 instances
 -----------------------------------------

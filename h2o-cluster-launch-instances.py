@@ -37,8 +37,8 @@ securityGroupName = 'SecurityDisabled'
 # Options you might want to change.
 # ---------------------------------
 
-numInstancesToLaunch = 6
-instanceType = 'm3.large'
+numInstancesToLaunch = 10
+instanceType = 'm3.2xlarge'
 instanceNameRoot = 'navdeep-instance'
 
 

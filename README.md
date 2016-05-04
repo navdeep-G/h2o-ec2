@@ -15,7 +15,7 @@ STEP 1:  Build a cluster of EC2 instances
 numInstancesToLaunch = 6
 instanceType = 'm3.large'
 ```
-- After chaning the previous run the following:
+- After changing the previous run the following:
 ```
 ./h2o-cluster-launch-instances.py
 ```

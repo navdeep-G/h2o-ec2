@@ -2,6 +2,8 @@
 
 This directory contains scripts to launch an H2O cluster in EC2.
 
+Note: The scripts below can be ran at once with the following command: `./run-all.sh`
+
 STEP 1:  Set up Amazon Credentials
 -----------------------------------------
 

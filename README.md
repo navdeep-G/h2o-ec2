@@ -2,12 +2,25 @@
 
 This directory contains scripts to launch an H2O cluster in EC2.
 
-STEP 0:  Install python and boto, if necessary
+STEP 1:  Set up Amazon Credentials
+-----------------------------------------
+- Add key info to `~/.bash_profile`:
+```
+# EC2 keys
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_SSH_PRIVATE_KEY_FILE="/home/ubuntu/.ssh/aws_key.pem"
+```
+- Source the file:
+```
+source ~/.bash_profile
+```
+STEP 2:  Install python and boto, if necessary
 -----------------------------------------
 
 http://boto.readthedocs.org/en/latest/
 
-STEP 1:  Build a cluster of EC2 instances
+STEP 3:  Build a cluster of EC2 instances
 -----------------------------------------
 
 - Edit h2o-cluster-launch-instances.py to suit your specific environment.
@@ -21,7 +34,7 @@ instanceType = 'm3.large'
 ./h2o-cluster-launch-instances.py
 ```
 
-STEP 2:  Start H2O Cluster
+STEP 4:  Start H2O Cluster
 -------------------------------------------------
 
 - This will distribute the `h2o.jar` file to all the worker nodes, along with your AWS credentials and then start the H2O cluster.
@@ -31,7 +44,7 @@ STEP 2:  Start H2O Cluster
 ./h2o-cluster-start-h2o.sh
 ```
 
-STEP 3:  Point your browser to H2O
+STEP 5:  Point your browser to H2O
 ----------------------------------
 
 Point your web browser to 

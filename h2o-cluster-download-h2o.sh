@@ -1,5 +1,5 @@
 #!/bin/bash
-AWS_SSH_PRIVATE_KEY_FILE=''
+#AWS_SSH_PRIVATE_KEY_FILE=''
 echo $AWS_SSH_PRIVATE_KEY_FILE
 
 set -e

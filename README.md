@@ -39,7 +39,7 @@ instanceType = 'm3.large'
 STEP 4:  Start H2O Cluster
 -------------------------------------------------
 
-- This will distribute the `h2o.jar` file to all the worker nodes, along with your AWS credentials and then start the H2O cluster.
+- This will distribute the `h2o.jar` file to all the worker nodes, along with your AWS credentials and then start the H2O cluster. Note, the `h2o.jar` is reflective of the latest stable build from H2O.
 ```
 ./h2o-cluster-download-h2o.sh
 ./h2o-cluster-distribute-aws-credentials.sh

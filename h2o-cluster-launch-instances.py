@@ -39,7 +39,7 @@ securityGroupName = 'SecurityDisabled'
 
 numInstancesToLaunch = 6
 instanceType = 'm3.large'
-instanceNameRoot = 'h2o-ai-stable'
+instanceNameRoot = 'navdeep-instance'
 
 
 # Options to help debugging.

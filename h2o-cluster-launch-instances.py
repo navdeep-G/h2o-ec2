@@ -37,7 +37,7 @@ securityGroupName = 'SecurityDisabled'
 # Options you might want to change.
 # ---------------------------------
 
-numInstancesToLaunch = 10
+numInstancesToLaunch = 4
 instanceType = 'm3.2xlarge'
 instanceNameRoot = 'navdeep-instance'
 
@@ -165,5 +165,4 @@ rv = os.system(cmd)
 if rv != 0:
     print 'Failed.'
     sys.exit(1)
-
 # Distribute flatfile script already prints success when it completes.

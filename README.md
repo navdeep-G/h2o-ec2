@@ -54,9 +54,8 @@ STEP 5:  Point your browser to H2O
 ----------------------------------
 
 Point your web browser to the following: 
-- http://any one of the public DNS node addresses:54321
-    
-This will open up the H2O Flow GUI
+- http://any one of the public DNS node addresses:54321 or http://any one of the public DNS node addresses:54322 for H2O Flow
+- http://any one of the public DNS node addresses:8787 for RStudio
 
 Stopping and restarting H2O
 ---------------------------

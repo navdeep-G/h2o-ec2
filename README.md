@@ -31,7 +31,7 @@ STEP 3:  Build a cluster of EC2 instances
 - Edit h2o-cluster-launch-instances.py to suit your specific environment.
 - Particularly, you can update the instance type, number of worker nodes, and the instance name:
 ```
-numInstancesToLaunch = 10
+numInstancesToLaunch = 4
 instanceType = 'm3.2xlarge'
 instanceNameRoot = 'navdeep-instance'
 ```

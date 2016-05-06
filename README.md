@@ -2,8 +2,6 @@
 
 This directory contains scripts to launch an H2O cluster in EC2.
 
-Note: After following steps 1 & 2 (where you set up your environment) you can run the scripts within the repo using the following command: `./run-all.sh` or you can do it manually by following steps 3-5.
-
 STEP 1:  Set up Amazon Credentials
 -----------------------------------------
 
@@ -24,6 +22,8 @@ STEP 2:  Install python and boto, if necessary
 
 - Boto: http://boto.readthedocs.org/en/latest/
 - Python: https://www.python.org/
+
+**Note:** After following steps 1 & 2 (where you set up your environment) you can run the scripts within the repo using the following command: `./run-all.sh` or you can do it manually by following steps 3-5.
 
 STEP 3:  Build a cluster of EC2 instances
 -----------------------------------------

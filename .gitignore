@@ -1,0 +1,7 @@
+nodes-public
+nodes-private
+flatfile.txt
+latest
+project_version
+core-site.xml
+aws_credentials.properties

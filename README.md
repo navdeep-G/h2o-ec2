@@ -17,13 +17,11 @@ export AWS_SSH_PRIVATE_KEY_FILE="/path/to/private_key.pem"
 source ~/.bash_profile
 ```
 
-STEP 2:  Install python and boto, if necessary
+STEP 2:  Install python 2 and boto, if necessary
 -----------------------------------------
 
 - Boto: http://boto.readthedocs.org/en/latest/
 - Python: https://www.python.org/
-
-**Note:** After following steps 1 & 2 (where you set up your environment) you can run the scripts within the repo using the following command: `./run-all.sh` or you can do it manually by following steps 3-5.
 
 STEP 3:  Build a cluster of EC2 instances
 -----------------------------------------
@@ -34,17 +32,27 @@ STEP 3:  Build a cluster of EC2 instances
 keyName = 'SSH key pair name'
 numInstancesToLaunch = 4
 instanceType = 'm3.2xlarge'
-instanceNameRoot = 'navdeep-instance'
+instanceNameRoot = 'h2o-instance'
 ```
-- After changing the previous run the following:
+- You can also specify a [maximum Spot request bid](https://aws.amazon.com/ec2/spot/pricing/) if running on Spot is desired:
 ```
-./h2o-cluster-launch-instances.py
+spotBid = '1.35'
 ```
+**Note:** After following steps 1-3 (where you set up your environment) you can run the scripts within the repo using the following command: `./run-all.sh` or you can do it manually by following steps 4-5.
+
+**Note:** If you fail to initialize a cluster instance, then you should `Terminate` the instance before re-trying to prevent a refusal of connection.
 
 STEP 4:  Start H2O Cluster
 -------------------------------------------------
 
-- This will distribute the `h2o.jar` file to all the worker nodes, along with your AWS credentials and then start the H2O cluster. Note, the `h2o.jar` is reflective of the latest stable build from H2O.
+- After changing the previous run the following to build a cluster of EC2 instances manually:
+```
+./h2o-cluster-launch-instances.py
+```
+
+**Note:** If using Spot requests and your spot bid is too low, the entire request will be automatically cancelled for you.
+
+- Below will distribute the `h2o.jar` file to all the worker nodes, along with your AWS credentials and then start the H2O cluster. Note, the `h2o.jar` is reflective of the latest stable build from H2O.
 ```
 ./h2o-cluster-download-h2o.sh
 ./h2o-cluster-distribute-aws-credentials.sh

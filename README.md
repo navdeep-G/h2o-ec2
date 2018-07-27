@@ -64,7 +64,7 @@ STEP 5:  Point your browser to H2O
 
 Point your web browser to the following: 
 - http://any one of the public DNS node addresses:54321 or http://any one of the public DNS node addresses:54322 for H2O Flow
-- http://any one of the public DNS node addresses:8787 for RStudio
+- http://any one of the public DNS node addresses:8787 for RStudio (login: h2oai:0xdata)
 - Note: An example of a DNS is as follows: `ec2-54-221-129-217.compute-1.amazonaws.com`. This can be found in your AWS console under `Public DNS` or in your terminal output next to `Starting on node [x]`.
 
 Stopping and restarting H2O

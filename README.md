@@ -1,6 +1,6 @@
 # h2o-ec2
 
-This directory contains scripts to launch an H2O cluster in EC2.
+This directory contains scripts to launch an H2O cluster in EC2 (EC2-Classic).
 
 STEP 1:  Set up Amazon Credentials
 -----------------------------------------
